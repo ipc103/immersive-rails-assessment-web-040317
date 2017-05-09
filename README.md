@@ -29,7 +29,9 @@ Luckily, another developer has already started the job. We have a model for gues
 3. As a user, I should be able to view all of the guests for a particular episode. This means that we'll need an episodes show page that lists out all of the guests who were on that episode. √
 
  GET '/episodes/:id'
-4. As a user, I should be able to login. Build out Login Form so that our users can login. To be RESTful - the form should post to '/sessions' and go to our `SessionsController#create` action.
+4. As a user, I should be able to login. Build out Login Form so that our users can login. To be RESTful - the form should post to '/sessions' and go to our `SessionsController#create` action. √
+
+'DELETE' '/logout', to : 'sessions#destroy'
 
 ### Hints / Tips
 

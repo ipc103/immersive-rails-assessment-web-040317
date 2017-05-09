@@ -1,5 +1,6 @@
 class GuestsController < ApplicationController
-
+  before_action :authorize_user
+  
   def index
     @guests = Guest.all
   end
