@@ -1,0 +1,12 @@
+<h1>Detail View for Guest</h1>
+
+<p><%= @guest.name %></p>
+<p><%= @guest.occupation %></p>
+
+<p>Appeared On:</p>
+
+<ul>
+  <% @guest.appearances.each do |appearance| %>
+    <li><%= appearance.episode.date %></li>
+  <% end %>
+</ul>
